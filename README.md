@@ -20,6 +20,9 @@ A simple Tic-Tac-Toe game built using **HTML, CSS, and JavaScript**. Players tak
 3. The game highlights the winner and disables further moves.
 4. Click the **Restart** button to reset the board.
 
+
+## VERCEL link
+https://tic-tac-toe-iota-sandy-48.vercel.app/
 ---
 **Made with ❤️ by Evilsoul1**
 
