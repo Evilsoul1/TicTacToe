@@ -2,6 +2,7 @@ let box = document.querySelectorAll(".btn");
 let restart = document.querySelector(".restart");
 let pO=true;
 let count=0;
+let winflag=0;
 const wins = [[0, 1, 2], [0, 3, 6], [0, 4, 8], [1, 4, 7], [2, 5, 8], [2, 4, 6], [3, 4, 5], [6, 7, 8],];
 box.forEach((i) => {
     i.addEventListener("click", () => {
@@ -29,10 +30,11 @@ box.forEach((i) => {
                         j.disabled=true;
                     }
                     alert(`winner is ${val1}`);
+                    winflag=1;
                 }
             }
         }
-        if(count==9){
+        if(count==9 && winflag==0){
             alert(`OOPS its a DRAW`);
         }
     })
@@ -45,4 +47,6 @@ restart.addEventListener("click" , () => {
         j.disabled=false;
         j.innerText="";
     }
+    count=0;
+    winflag=0;
 })
