@@ -76,3 +76,40 @@ body {
     border-color: gold;
     box-shadow: 0px 0px 10px gold;
 }
+@media (max-width: 767px) {
+    .game {
+        height: 50vh;
+        width: 50vh;
+        gap: 1vw;
+    }
+    .btn {
+        height: 15vh;
+        width: 15vh;
+        font-size: large;
+    }
+    .heading {
+        font-size: large;
+    }
+}
+  
+@media (max-width: 574px) {
+    .game {
+        height: 40vh;
+        width: 40vh;
+        gap: 0.5vw;
+    }
+    .btn {
+        height: 12vh;
+        width: 12vh;
+        font-size: medium;
+    }
+    .heading {
+        font-size: medium;
+        flex-direction: column;
+        gap: 0.5vh;
+    }
+    .restart {
+        padding: 0.8rem;
+        font-size: small;
+    }
+}
